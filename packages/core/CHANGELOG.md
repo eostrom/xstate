@@ -1,5 +1,17 @@
 # xstate
 
+## 4.30.0
+
+### Minor Changes
+
+- [#2965](https://github.com/statelyai/xstate/pull/2965) [`8b8f719c3`](https://github.com/statelyai/xstate/commit/8b8f719c36ab2c09fcd11b529cc6c9c89a06ad2e) Thanks [@satyasinha](https://github.com/satyasinha)! - All actions are now available in the `actions` variable when importing: `import { actions } from 'xstate'`
+
+### Patch Changes
+
+- [#2982](https://github.com/statelyai/xstate/pull/2982) [`a39145580`](https://github.com/statelyai/xstate/commit/a391455803171dcf03a1a0ec589f9dd603260d63) Thanks [@Andarist](https://github.com/Andarist)! - Marked all phantom properties on the `StateMachine` type as deprecated. This deprioritized them in IDEs so they don't popup as first suggestions during property access.
+
+* [#2981](https://github.com/statelyai/xstate/pull/2981) [`edf60d67b`](https://github.com/statelyai/xstate/commit/edf60d67b3ca58eca96c7853410528c4e4abac7b) Thanks [@Andarist](https://github.com/Andarist)! - Moved an internal `@ts-ignore` to a JSDoc-style comment to fix consuming projects that do not use `skipLibCheck`. Regular inline and block comments are not preserved in the TypeScript's emit.
+
 ## 4.29.0
 
 ### Minor Changes
@@ -33,7 +45,7 @@
 
 ### Patch Changes
 
-* [#2962](https://github.com/statelyai/xstate/pull/2962) [`32520650b`](https://github.com/statelyai/xstate/commit/32520650b7d6b43e416b896054033432aaede5d5) Thanks [@mattpocock](https://github.com/mattpocock)! - Added `t()`, which can be used to provide types for `schema` attributes in machine configs:
+- [#2962](https://github.com/statelyai/xstate/pull/2962) [`32520650b`](https://github.com/statelyai/xstate/commit/32520650b7d6b43e416b896054033432aaede5d5) Thanks [@mattpocock](https://github.com/mattpocock)! - Added `t()`, which can be used to provide types for `schema` attributes in machine configs:
 
   ```ts
   import { t, createMachine } from 'xstate';
@@ -46,7 +58,7 @@
   });
   ```
 
-- [#2957](https://github.com/statelyai/xstate/pull/2957) [`8550ddda7`](https://github.com/statelyai/xstate/commit/8550ddda73e2ad291e19173d7fa8d13e3336fbb9) Thanks [@davidkpiano](https://github.com/davidkpiano)! - The repository links have been updated from `github.com/davidkpiano` to `github.com/statelyai`.
+* [#2957](https://github.com/statelyai/xstate/pull/2957) [`8550ddda7`](https://github.com/statelyai/xstate/commit/8550ddda73e2ad291e19173d7fa8d13e3336fbb9) Thanks [@davidkpiano](https://github.com/davidkpiano)! - The repository links have been updated from `github.com/davidkpiano` to `github.com/statelyai`.
 
 ## 4.28.1
 
